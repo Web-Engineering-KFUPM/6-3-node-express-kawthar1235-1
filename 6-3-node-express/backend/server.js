@@ -9,3 +9,9 @@ const PORT = 3000;
 import cors from "cors";
 app.use(cors());
 
+// TODO 5: Import and apply Morgan middleware
+import morgan from "morgan";
+app.use(morgan("dev"));
+
+import { getRandomQuote } from "./quotes.js";
+
